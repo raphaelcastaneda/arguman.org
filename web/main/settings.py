@@ -93,7 +93,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-PREVENT_LANGUAGE_REDIRECTION = False
+PREVENT_LANGUAGE_REDIRECTION = True
 
 REDIRECTED_PATHS = (
     '/',
@@ -150,7 +150,7 @@ TEMPLATE_DIRS = (
 
 # Social Auth Settings
 AUTHENTICATION_BACKENDS = (
-    'social_auth.backends.twitter.TwitterBackend',
+    'django_auth_ldap.backend.LDAPBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
 
@@ -228,7 +228,7 @@ REST_FRAMEWORK = {
     'DATETIME_FORMAT': '%d-%m-%Y %H:%m'
 }
 
-MONGODB_HOST = "localhost"
+MONGODB_HOST = "mongodb"
 MONGODB_DATABASE = "arguman"
 
 SITE_URL = "arguman.org"
