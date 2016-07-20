@@ -8,6 +8,7 @@ python-openid==2.2.5
 wsgiref==0.1.2
 django-gravatar2==1.1.4
 django-extensions==1.6.1
+django-auth-ldap==1.2.8
 markdown2==2.3.0
 pymongo==2.6.3
 django-markitup==2.2.2
